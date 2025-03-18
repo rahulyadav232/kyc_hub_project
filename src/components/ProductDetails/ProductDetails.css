@@ -1,0 +1,25 @@
+
+  .product-table {
+    padding: 20px;
+    background: #fff;
+  }
+
+  .highlight {
+    background-color: #f0f9ff; 
+    color: #1890ff;          
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+  
+  .highlight-img {
+    border: 2px solid #1890ff;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+  
+  .highlight-img:hover {
+    transform: scale(1.1);
+  }
+  
+  

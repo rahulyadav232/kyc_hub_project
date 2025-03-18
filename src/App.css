@@ -1,0 +1,51 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden; 
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar-content-wrapper {
+  display: flex;
+  position: absolute;
+  top: 64px; 
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 64px);
+  overflow: hidden; 
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #ffffff;
+  overflow-y: auto;
+}
+
+.content::-webkit-scrollbar, 
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb, 
+.sidebar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb:hover,
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
